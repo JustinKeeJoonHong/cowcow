@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* 헤더 및 메뉴 */
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.headmenu {
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.headmenu > li {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.headmenu > li:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+/* 섹션전체 */
+section {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*  fixed 로고 검색창 메뉴 */
+.Topfixed {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
+}
+
+.logo_search {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  position: relative;
+}
+
+.search {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  width: 400px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 5%;
+  font-size: 26px;
+}
+
+.menubar {
+  height: 40px;
+}
+
+.menubar > ul {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  align-items: center;
+}
+
+.menubar li {
+  width: 100px;
+  text-align: center;
+}
+
+.hiddenbar {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.menubar li:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.on {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hiddenbar > ul {
+  width: 100px;
+  text-align: center;
+}
+
+.hiddenbar li {
+  height: 30px;
+  cursor: pointer;
+}
+
+.hiddenbar li:hover {
+  color: gray;
+}
+
+/* 슬로건 */
+.slogan {
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: aliceblue;
+}
+
+.slogan > p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* 새로운 상품 */
+
+.p {
+  margin: 10px 0;
+  margin-left: 10px;
+}
+.new_product {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.new_product > div > ul > li {
+  width: 400px;
+  height: 600px;
+  border-radius: 50px;
+  margin-right: 30px;
+}
+
+#new_box {
+  width: 1000px;
+  overflow: hidden;
+}
+
+#new_box > ul {
+  width: 1000px;
+  height: 600px;
+  transition: all 1s;
+  display: inline-flex;
+}
+
+#new_box > ul > li {
+  min-width: 400px;
+  min-height: 600px;
+  text-align: center;
+}
+
+#new_box > ul > li:first-child {
+  background: url(./cowimg/new1.jpg) center;
+  background-size: cover;
+}
+
+#new_box > ul > li:nth-child(2) {
+  background: url(./cowimg/new2.jpg) center;
+  background-size: cover;
+}
+
+#new_box > ul > li:nth-child(3) {
+  background: url(./cowimg/new3.jpg) center;
+  background-size: cover;
+}
+
+#new_box > ul > li:nth-child(4) {
+  background: url(./cowimg/new4.jpg) center;
+  background-size: cover;
+}
+
+#new_box > ul > li:nth-child(5) {
+  background: url(./cowimg/new5.jpg) center;
+  background-size: cover;
+}
+
+#prevBtn,
+#nextBtn {
+  cursor: pointer;
+  width: 7rem;
+  height: 6rem;
+  z-index: 100;
+}
+
+#prevBtn {
+  background: url(./cowimg/premium-icon-left-arrow-5166419.png) center;
+  background-size: cover;
+}
+
+#nextBtn {
+  background: url(./cowimg/premium-icon-right-arrow-5166431.png) center;
+  background-size: cover;
+}
+/* 베스트 상품 */
+
+.best_product {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.best_product > div {
+  width: 300px;
+  height: 600px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+#bestF {
+  background: url(./cowimg/best1.jpg) center;
+  background-size: cover;
+}
+
+#bestS {
+  background: url(./cowimg/best2.jpg) center;
+  background-size: cover;
+}
+
+#bestT {
+  background: url(./cowimg/best3.jpg) center;
+  background-size: cover;
+}
+
+/* aside */
+.cursor_basket {
+  background-color: aliceblue;
+  width: 250px;
+  height: 500px;
+  border-radius: 50px;
+  position: fixed;
+  top: 20vh;
+  right: 10vh;
+  padding-top: 20px;
+}
+
+.cursor1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url(./cowimg/premium-icon-up-arrow-3042413.png) center;
+  background-size: cover;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.cursor2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url(./cowimg/premium-icon-down-arrow-3042414.png) center;
+  background-size: cover;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.basket {
+  width: 180px;
+  height: 250px;
+  background-color: aqua;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* 광고창 */
+.event {
+  width: 250px;
+  height: 500px;
+  border-radius: 50px;
+  position: fixed;
+  top: 20vh;
+  left: 10vh;
+}
+
+#advBox {
+  width: 250px;
+  overflow: hidden;
+}
+
+#advBox > ul {
+  list-style: none;
+  width: 250px;
+  height: 500px;
+  transition: all 1s;
+  display: inline-flex;
+}
+
+#advBox > ul > li {
+  min-width: 250px;
+  min-height: 500px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#advBox > ul > li:nth-child(1) {
+  background: url(./cowimg/best1.jpg) center;
+  background-size: cover;
+}
+
+#advBox > ul > li:nth-child(2) {
+  background: url(./cowimg/best2.jpg) center;
+  background-size: cover;
+}
+
+#advBox > ul > li:nth-child(3) {
+  background: url(./cowimg/best3.jpg) center;
+  background-size: cover;
+}
+
+#advBox > ul > li:nth-child(4) {
+  background: url(./cowimg/new5.jpg) center;
+  background-size: cover;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 475px;
+}
+
+.foot {
+  width: 100%;
+}
+
+#first {
+  height: 345px;
+}
+
+#third {
+  font-size: 12px;
+}
+
+.footerbox {
+  display: flex;
+}
+
+.footerbox > div {
+  width: 333px;
+  height: 100%;
+}
+
+.country {
+  display: flex;
+  width: 333px;
+  height: 100px;
+}
+
+.country > div {
+  width: 80px;
+  height: 30px;
+}
+
+.country > img {
+  width: 32px;
+}
+
+#second {
+  background-color: black;
+  height: 130px;
+  color: white;
+  font-size: 10px;
+}
+
+.foot > div {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#bottombox {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 72px;
+  position: absolute;
+  bottom: 20%;
+}
